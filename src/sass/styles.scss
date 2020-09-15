@@ -1,1 +1,14 @@
 @import "main.scss";
+
+#devdeas{
+  min-height: 100vh;
+
+  .dashboard{
+    overflow: auto;
+
+    .statusBoard{
+      border: 2px solid $violet;
+      border-radius: 8px;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&display=swap');
+
+$violet: #9146FF;
+$black: #121212;
+$white: #FCFCFC;
+$red: #ff4757;
+$green: #2ed573;
+
+*{
+  font-family: Montserrat !important;
+}
+
+h1, h2, h3, h4, h5, h6, span{
+  font-family: Ubuntu !important;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.dark{
+  color: $white;
+  background-color: $black;
+}

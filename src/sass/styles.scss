@@ -5,10 +5,10 @@
 
   .dashboard{
     overflow: auto;
+  }
 
-    .statusBoard{
-      border: 2px solid $violet;
-      border-radius: 8px;
-    }
+  .status-board, .submit-form{
+    border: 2px solid $violet;
+    border-radius: 8px;
   }
 }

@@ -18,12 +18,30 @@ h1, h2, h3, h4, h5, h6, span{
   text-transform: uppercase;
 }
 
-.dark{
-  color: $white;
-  background-color: $black;
+input, textarea{
+  background-color: rgba($white, 0.1);
+  border: none;
+  outline: none;
+
+  &:focus{
+    box-shadow: none;
+  }
+}
+[placeholder]{
+  color: $violet;
 }
 
-.purple{
-  background-color: $violet;
+.dark{
+  background-color: $black;
   color: $white;
+}
+
+.bordered{
+  border-radius: 8px;
+  border: 2px solid $violet;
+}
+
+.alt-text{
+  color: $violet;
+  font-weight: bold;
 }

@@ -77,7 +77,7 @@ class IdeaSumit extends Component{
   }
 
   callDB() {
-    fetch("https://projects.enzoavagliano.fr:9000/db")
+    fetch("https://projects-enzoavagliano.fr:9000/db")
     .then(res => res.text())
     .then(res => this.setState({ dbResponse: res }));
     console.log(this.state.dbResponse);

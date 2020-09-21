@@ -1,5 +1,105 @@
 @import "main.scss";
 
-#home{
-  height: 100vh;
+.dark{
+  background-color: $black;
+  color: $white;
+  height: auto;
+}
+
+#devdeasDescription{
+  margin-bottom: 7vh;
+  .devdeasMainTitle{
+    padding: 0;
+    margin: 0;
+    color: $violet;
+    font-size: 4em;
+
+    span{
+      color: $white;
+    }
+    .beta{
+      font-size: 25%;
+    }
+  }
+
+  .devdeasMainSubtitle{
+    color: $violet;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+}
+.devdeasTitle{
+  padding: 0;
+  margin: 0;
+  color: $violet;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  span{
+    color: $white;
+  }
+}
+
+.warning{
+  color: $red !important;
+  text-decoration: underline;
+}
+
+.bordered{
+  border: 3px solid $violet;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+
+.rulesImportant{
+  color: $red;
+}
+
+.ideaCard{
+  width: 18rem !important;
+  height: 40vh;
+}
+
+.ideaContainer{
+  overflow-x: scroll;
+}
+
+.badge-primary{
+  background-color: $violet !important;
+}
+
+.cardTextBody{
+  margin-top: 1vh;
+  height: 20vh;
+  overflow: auto;
+}
+
+.cardBadges{
+  max-height: 7vh;
+  overflow: auto;
+}
+
+.devdeasTitle{
+  padding: 0;
+  margin: 0;
+  color: $violet;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  span{
+    color: $white;
+  }
+}
+
+small{
+  color: $violet !important;
+  font-weight: bold;
+}
+
+
+@media screen and(max-width:992px) {
+  .devdeasMainTitle{
+    font-size: 3em !important;
+  }
 }

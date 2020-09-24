@@ -22,10 +22,10 @@ class Navbar extends Component{
               <a className="nav-link" href="#about">About</a>
             </li>
             <li className="nav-item mr-2">
-              <a className="nav-link" href="#submit">Submit idea</a>
+              <a className="nav-link" href="#submitidea">Submit idea</a>
             </li>
             <li className="nav-item mr-2">
-              <a className="nav-link" href="#submited">Submited ideas</a>
+              <a className="nav-link" href="#submitedideas">Submited ideas</a>
             </li>
             <li className="nav-item mr-2">
               <a className="nav-link" href="https://enzoavagliano.fr">Website</a>

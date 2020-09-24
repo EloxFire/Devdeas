@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Dashboard from './components/Dashboard';
 import Description from './components/Description';
 import Submit from './components/Submit';
+import List from './components/List';
 
 class App extends Component {
   render(){
@@ -18,6 +19,7 @@ class App extends Component {
                 <Dashboard/>
                 <Description/>
                 <Submit/>
+                <List/>
               </div>
             }/>
 
@@ -26,6 +28,7 @@ class App extends Component {
                 <Dashboard/>
                 <Description/>
                 <Submit/>
+                <List/>
               </div>
             }/>
           </Switch>

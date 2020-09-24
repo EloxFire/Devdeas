@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import * as Icon from 'react-bootstrap-icons';
 import Timestamp from 'react-timestamp';
-import '../sass/dashboard.scss';
+import '../sass/styles.scss';
 
 class Dashboard extends Component{
   constructor(props){
@@ -63,7 +63,7 @@ class Dashboard extends Component{
 
   render(){
     return(
-      <div id="dashboard" className="mt-5 p-3 col-11 col-lg-8">
+      <div id="dashboard" className="mt-5 p-3 col-11 col-lg-7">
         <h2>Service dashboard</h2>
 
         <div className="d-flex flex-wrap justify-content-around align-items-center">

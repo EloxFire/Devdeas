@@ -1,6 +1,6 @@
 @import "main.scss";
 
-#dashboard, #description{
+#dashboard, #description, #submitidea{
   border-radius: 8px;
   border: 2px solid $violet;
   height: 30vh;
@@ -9,4 +9,10 @@
 
 .devdeasTitle{
   color: $violet;
+}
+
+.form-alt{
+  font-size: 80%;
+  color: $violet;
+  text-transform: none;
 }

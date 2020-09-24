@@ -16,6 +16,7 @@ h1, h2, h3, h4, h5, h6, span{
   font-family: Ubuntu !important;
   font-weight: 600;
   text-transform: uppercase;
+  color: $white;
 }
 
 input, textarea{
@@ -31,21 +32,18 @@ input, textarea{
   color: $violet !important;
 }
 
-.dark{
+#devdeas{
   background-color: $black;
-  color: $white;
+  min-height: 100vh;
+  height: auto;
 }
 
-.bordered{
-  border-radius: 8px;
-  border: 2px solid $violet;
-}
+@media screen and (max-width:992px) {
+  h2{
+    font-size: 130% !important
+  }
 
-.alt-text{
-  color: $violet;
-  font-weight: bold;
-}
-
-.h-100{
-  height: 100vh !important;
+  h4{
+    font-size: 100% !important
+  }
 }

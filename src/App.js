@@ -1,34 +1,25 @@
 import React, { Component } from 'react';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import * as Icon from 'react-bootstrap-icons';
 
-import './sass/styles.scss';
-
-import axios from 'axios';
-
-import DevdeasDescritpion from './components/DevdeasDescritpion';
-import IdeaList from './components/IdeaList';
-import IdeaSubmit from './components/IdeaSubmit';
+import Navbar from './components/Navbar';
+import Dashboard from './components/Dashboard';
 
 class App extends Component {
   render(){
     return(
       <div>
         <Router>
+          <Navbar/>
           <Switch>
             <Route path="/" exact component={props =>
-              <div className="dark">
-                <DevdeasDescritpion/>
-                <IdeaSubmit/>
-                <IdeaList/>
+              <div id="devdeas" className="d-flex flex-column align-items-center">
+                <Dashboard/>
               </div>
             }/>
 
             <Route path="/app" component={props =>
-              <div className="dark">
-                <DevdeasDescritpion/>
-                <IdeaSubmit/>
-                <IdeaList/>
+              <div id="devdeas" className="d-flex flex-column align-items-center">
+                <Dashboard/>
               </div>
             }/>
           </Switch>

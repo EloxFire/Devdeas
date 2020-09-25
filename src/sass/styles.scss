@@ -16,3 +16,44 @@
   color: $violet;
   text-transform: none;
 }
+
+.ideaList{
+  height: 50vh;
+  overflow-x: scroll!important;
+
+  .card{
+    height: 45vh;
+    background-color: $black;
+    border: 2px solid $violet;
+    border-radius: 8px;
+
+    .card-text{
+      color: $white;
+    }
+
+    /* width */
+    ::-webkit-scrollbar {
+      width: 2px;
+    }
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: $white;
+      border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: $violet;
+    }
+  }
+
+  .badge-primary{
+    background-color: $violet !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .ideaList{
+
+  }
+}

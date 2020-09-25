@@ -32,6 +32,28 @@ input, textarea{
   color: $violet !important;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 20px;
+  background-color: rgba($white, 0.2);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $violet;
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $white;
+}
+
 #devdeas{
   background-color: $black;
   min-height: 100vh;

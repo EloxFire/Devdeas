@@ -54,7 +54,7 @@ class List extends Component{
             this.state.ideas.map(function(item, index){
               return(
                 <div key={index} className="card card col-11 col-xs-11 col-sm-11 col-md-11 col-lg-3 m-2 m-2" style={{color:"black"}}>
-                  <div className="card-body" style={{height:"80px",overflowY:"auto"}}>
+                  <div className="card-body" style={{height:"50px",overflowY:"auto"}}>
                     <h5 className="card-title">
                       {
                         item.certified === 1 &&
@@ -62,7 +62,9 @@ class List extends Component{
                       }
                       {item.name}
                     </h5>
-                    <span className="badge badge-primary mr-1 mt-1 mb-1" style={{fontSize:"60%",color:"#FCFCFC"}}>By {item.author}</span>
+                  </div>
+                  <div className="card-body" style={{height:"40px"}}>
+                    <span className="badge badge-primary mr-1 mt-1 mb-1" style={{color:"#FCFCFC"}}>By {item.author}</span>
                   </div>
                   <div className="card-body">
                     {
@@ -79,7 +81,7 @@ class List extends Component{
                       <span className="badge badge-primary mr-1 mt-1 mb-1">No language</span>
                     }
                   </div>
-                  <div className="card-body" style={{overflow:"auto", height:"22vh"}}>
+                  <div className="card-body" style={{overflow:"auto", height:"20vh"}}>
                     {item.description === null &&
                       <p className="card-text">No description.</p>
                     }

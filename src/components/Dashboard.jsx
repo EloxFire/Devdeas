@@ -116,7 +116,7 @@ class Dashboard extends Component{
             <h4><Icon.PatchCheckFll/> Certified ideas :</h4>
             {
               this.state.db === "OK" &&
-              <p>{this.state.ideas.length}</p>
+              <p>{this.state.certified_ideas.length}</p>
             }
             {
               this.state.db === null &&

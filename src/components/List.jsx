@@ -11,7 +11,7 @@ class List extends Component{
   }
 
   getIdeas(){
-    fetch("https://projects-enzoavagliano.fr:9000/ideas")
+    fetch("https://projects-enzoavagliano.fr:9000/getideas")
     .then(res => res.json())
     .then(res => this.setState({
       ideas: res
@@ -20,7 +20,7 @@ class List extends Component{
 
 
   getCertifiedIdeas(){
-    fetch("https://projects-enzoavagliano.fr:9000/certified")
+    fetch("https://projects-enzoavagliano.fr:9000/getcertifiedideas")
     .then(res => res.json())
     .then(res => this.setState({
       certified_ideas: res

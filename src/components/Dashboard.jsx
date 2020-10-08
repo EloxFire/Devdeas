@@ -15,7 +15,7 @@ class Dashboard extends Component{
   }
 
   getIdeas(){
-    fetch("https://projects-enzoavagliano.fr:9000/ideas")
+    fetch("https://projects-enzoavagliano.fr:9000/getideas")
     .then(res => res.json())
     .then(res => this.setState({
       ideas: res
@@ -23,7 +23,7 @@ class Dashboard extends Component{
   }
 
   getCertifiedIdeas(){
-    fetch("https://projects-enzoavagliano.fr:9000/certified")
+    fetch("https://projects-enzoavagliano.fr:9000/getcertifiedideas")
     .then(res => res.json())
     .then(res => this.setState({
       certified_ideas: res
@@ -31,7 +31,7 @@ class Dashboard extends Component{
   }
 
   getUptime(){
-    fetch("https://projects-enzoavagliano.fr:9000/start")
+    fetch("https://projects-enzoavagliano.fr:9000/getuptime")
     .then(res => res.json())
     .then(res => this.setState({
       started: res
@@ -39,7 +39,7 @@ class Dashboard extends Component{
   }
 
   getConnection(){
-    fetch("https://projects-enzoavagliano.fr:9000/db")
+    fetch("https://projects-enzoavagliano.fr:9000/getconnection")
     .then(res => res.text())
     .then(res => this.setState({
       db: res

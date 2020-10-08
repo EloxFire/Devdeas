@@ -84,7 +84,7 @@ class Submit extends Component{
   }
 
   database_connexion() {
-    fetch("https://projects-enzoavagliano.fr:9000/db")
+    fetch("https://projects-enzoavagliano.fr:9000/getconnection")
     .then(res => res.text())
     .then(res => this.setState({ dbResponse: res }));
     console.log(this.state.database);
